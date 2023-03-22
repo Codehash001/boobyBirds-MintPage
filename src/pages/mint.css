@@ -16,7 +16,10 @@
   }
 
 body{
-    overflow-x: hidden
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    
 }
 .navCointainer{
     display: flex;
