@@ -57,3 +57,9 @@ h1{
   background-color: blue;
   
 }
+
+.mintSection{
+  display: inline-block;
+  margin-top: 10px;
+  background-color: pink;
+}

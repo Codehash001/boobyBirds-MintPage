@@ -22,6 +22,15 @@ function Mint() {
         <div className='MintContainer'>
 
         <h1 className='mint_date'>MINT DATE: March 2023. STAY TUNED!</h1>
+
+        <div className='mintSection'>
+          <h2>Public Sale is Live!</h2>
+          <h2>Connected : 0x2d...c2c</h2>
+          <h2> 10 / 5000 NFTs Minted</h2>
+          <h2>Max Mint Amount  : 2</h2>
+
+          <button> Connect Wallet</button>
+        </div>
         </div>
 
 
