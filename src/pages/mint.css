@@ -35,8 +35,6 @@ h1{
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    width: 100%;
-    height: auto;
     padding: 10px 80px;
 }
 
