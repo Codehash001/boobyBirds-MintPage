@@ -66,19 +66,18 @@ h1{
   z-index: 10px;
 }
 
-.mint_soundlink button {
+.soundlink_button {
   background: transparent;
   border: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 12px;
 }
 
-.mint_soundlink button:hover{
+.soundlink_button:hover{
   cursor: pointer;
 }
-.mint_soundlink img{
+.soundlink_button img{
   width: 50px;
   height: auto;
 }
