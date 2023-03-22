@@ -51,7 +51,7 @@ function Mint() {
           <h2> 10 / 5000 NFTs Minted</h2>
           <h2>Max Mint Amount  : 2</h2>
 
-          <ConnectButton />
+          
         </div>
         </div>
 
