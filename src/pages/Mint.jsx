@@ -20,7 +20,7 @@ const { connectors } = getDefaultWallets({
 const wagmiClient = createClient({
   autoConnect: false,
   connectors,
-  provider
+  provider : alchemyProvider
 });
 
 function Mint() {
