@@ -40,7 +40,6 @@ h1{
 .video_wrapper{
   display: flex;
   width: 100%;
-  padding: 50px;
   justify-content: center;
   position: relative;
 }
@@ -62,10 +61,11 @@ h1{
   width: 50px;
   height: auto;
 }
-/* .VideoTag{
+.VideoTag{
   width: 100%;
+  padding: 50px;
   
-} */
+}
 
 .MintContainer{
   display: flex;
@@ -77,11 +77,11 @@ h1{
 .mint_date{
   display: inline-block;
   width: auto;
-  padding: 4px 10px;
+  padding: 18px;
   border: 1px;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   background-color: pink;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   
 }
 
@@ -90,7 +90,7 @@ h1{
   display: inline-block;
   padding: 20px;
   border: 1px;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   background-color: pink;
   text-align: center;
   letter-spacing: 0.1em;
