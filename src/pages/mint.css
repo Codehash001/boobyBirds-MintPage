@@ -40,6 +40,7 @@ h1{
 .video_wrapper{
   display: flex;
   width: 100%;
+  padding: 50px;
   justify-content: center;
   position: relative;
 }
@@ -62,7 +63,6 @@ h1{
   height: auto;
 }
 .VideoTag{
-  padding: 60px;
   width: 100%;
   
 }
