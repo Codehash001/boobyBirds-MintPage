@@ -40,11 +40,18 @@ h1{
 .video_wrapper{
   display: flex;
   width: 100%;
+  justify-content: center;
+  
+}
+
+.inn_video_wrapper{
+  display: flex;
+  width: 100%;
   max-width: 1000px;
   justify-content: center;
   position: relative;
-  
 }
+
 
 .mint_soundlink {
   background-color: rgba(242, 103, 224, 0.8);
