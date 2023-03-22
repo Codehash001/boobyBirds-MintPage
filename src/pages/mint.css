@@ -64,6 +64,7 @@ h1{
   top: 60px;
   right: 40px ;
   z-index: 10px;
+  cursor: pointer;
 }
 
 .soundlink_button {
