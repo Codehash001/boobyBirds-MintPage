@@ -39,11 +39,13 @@ h1{
 }
 
 .vid {
-    width: 100vh;
     height: auto;
 }
 
 .mint_date{
+  display: flex;
+    justify-content: center;
+    align-items: center;
   width: auto;
   padding: 10px 15px;
   background: rgb(218, 22, 169);
@@ -52,6 +54,9 @@ h1{
 }
 
 .test{
+  display: flex;
+    justify-content: center;
+    align-items: center;
   width: auto;
   background-origin: padding-box;
   padding: 0px;
