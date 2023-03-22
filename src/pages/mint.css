@@ -1,6 +1,7 @@
 @font-face {
     font-family: "Besty";
     src: local("'Besty'"), url(../styles/Besty.ttf);
+    font-weight: normal;
   }
   @font-face {
     font-family: "Kiddos";
