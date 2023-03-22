@@ -17,10 +17,6 @@
 
 .mainContainer{
     overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
     
 }
 .navCointainer{
@@ -46,21 +42,14 @@ h1{
     height: auto;
 }
 
-.mint_date{
+.MintContainer{
   display: flex;
-    justify-content: center;
-    align-items: center;
-  width: auto;
-  padding: 10px 15px;
-  background: rgb(218, 22, 169);
-  text-decoration-color: beige;
-  font-size: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .test{
   display: inline-block;
-  justify-content: center;
-  align-items: center;
   width: auto;
   padding: 0px;
   border-radius: 1px;
