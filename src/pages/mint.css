@@ -1,10 +1,10 @@
 @font-face {
     font-family: "Besty";
-    src: local("'Besty'"), url(/styles/Besty.ttf);
+    src: local("'Besty'"), url(../styles/Besty.ttf);
   }
   @font-face {
     font-family: "Kiddos";
-    src: local("'Kiddos-Demo'"), url(/styles/Kiddos-Demo.ttf);
+    src: local("'Kiddos-Demo'"), url(../styles/Kiddos-Demo.ttf);
   }
 
   .font-face-main{
