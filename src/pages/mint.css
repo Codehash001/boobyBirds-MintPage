@@ -80,6 +80,7 @@ h1{
 .soundlink_button img{
   width: 50px;
   height: auto;
+  cursor: pointer;
 }
 .VideoTag{
   width: 100%;
