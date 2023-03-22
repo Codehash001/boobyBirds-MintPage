@@ -1,5 +1,5 @@
 import React from 'react'
-import '/mint.css'
+import './mint.css'
 
 function Mint() {
   return (
