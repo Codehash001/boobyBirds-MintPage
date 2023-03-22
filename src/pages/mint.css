@@ -35,7 +35,7 @@ h1{
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    margin: 10px 80px;
+    padding: 10px 80px;
 }
 
 .vid {
