@@ -9,7 +9,7 @@ import { alchemyProvider } from "wagmi/providers/alchemy";
 
 const { chains, provider } = configureChains(
   [mainnet, goerli],
-  [alchemyProvider({ apiKey: "bYwv6lWEDB1KoLyivwgn_7YhZNSOkCRy", priority:0, chainId:5 })],
+  [alchemyProvider({ apiKey: "bYwv6lWEDB1KoLyivwgn_7YhZNSOkCRy", priority:0,})],
 );
 
 const { connectors } = getDefaultWallets({
