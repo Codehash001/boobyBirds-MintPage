@@ -26,11 +26,12 @@ body{
     align-items: center;
 }
 h1{
-    font-size: 40px;
+    font-size: 30px;
     margin: 0px 10px;
 }
 
 .videoContainer{
+  
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -39,6 +40,6 @@ h1{
 }
 
 .vid {
-    width: 700px;
+    width: 100vh;
     height: auto;
 }
