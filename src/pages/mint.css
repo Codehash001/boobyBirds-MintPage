@@ -1,5 +1,24 @@
+@font-face {
+    font-family: "Besty";
+    src: local("'Besty'"), url(/styles/Besty.ttf);
+  }
+  @font-face {
+    font-family: "Kiddos";
+    src: local("'Kiddos-Demo'"), url(/styles/Kiddos-Demo.ttf);
+  }
+
+  .font-face-main{
+    font-family: "Kiddos";
+  }
+
 body{
     overflow-x: hidden;
     width: 100%;
     height: auto;
+}
+.navCointainer{
+    font-family: "Kiddos";
+}
+h1{
+    font-size: medium;
 }
