@@ -60,6 +60,8 @@ h1{
 
 .mintSection{
   display: inline-block;
-  margin-top: 10px;
+  padding: 20px;
+  border: 1px;
+  border-radius: 1rem;
   background-color: pink;
 }
