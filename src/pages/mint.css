@@ -53,7 +53,7 @@ h1{
 }
 
 .test{
-  display: inline-block;
+  display: inline;
   width: auto;
   padding: 0px;
   border-radius: 1px;
