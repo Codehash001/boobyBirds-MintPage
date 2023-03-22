@@ -41,7 +41,7 @@ h1{
   display: flex;
   width: 100%;
   justify-content: center;
-  position: relative;
+  
 }
 .mint_soundlink button{
   background: transparent;
@@ -65,6 +65,7 @@ h1{
   width: 100%;
   max-width: 1000px;
   padding: 50px;
+  position: relative;
   
 }
 

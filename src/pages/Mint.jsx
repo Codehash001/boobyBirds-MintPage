@@ -48,17 +48,16 @@ const handleMutedVid = () => {
             </div>
 
             <div className="video_wrapper">
-            <div className="mint_soundlink">
-              <button className="soundlink_button" onClick={handleMutedVid}>
-                <img src="config/images/volume.png" alt="" />
-              </button>
-            </div>
-
             <video className="VideoTag" id="video" autoPlay loop muted={mutedVid}>
               <source
                 src={"./config/images/vid/Web3_cartoon.mp4"}
                 type="video/mp4"
               />
+              <div className="mint_soundlink">
+              <button className="soundlink_button" onClick={handleMutedVid}>
+                <img src="config/images/volume.png" alt="" />
+              </button>
+            </div>
             </video>
           </div>
 
