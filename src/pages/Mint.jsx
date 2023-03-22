@@ -19,10 +19,13 @@ function Mint() {
             </video>
         </div>
 
-        <div className='MintContainer'></div>
+        <div className='MintContainer'>
+
+        <h1 className='test'>MINT DATE: March 2023. STAY TUNED!</h1>
+        </div>
 
 
-          <h1 className='test'>MINT DATE: March 2023. STAY TUNED!</h1>
+          
 
 
         <h3 className="font-Besty"></h3>
