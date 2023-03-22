@@ -72,6 +72,7 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 12px;
 }
 
 .mint_soundlink button:hover{
