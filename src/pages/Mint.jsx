@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState, useRef } from "react";
 import './mint.css'
 import "@rainbow-me/rainbowkit/styles.css";
 import { getDefaultWallets, RainbowKitProvider, ConnectButton } from "@rainbow-me/rainbowkit";
@@ -31,7 +31,6 @@ const wagmiClient = createClient({
 
 const [mutedVid, setMutedVid] = useState(true);
 const handleMutedVid = () => {
-  video.muted = !video.muted;
   setMutedVid(!mutedVid);
 };
 
@@ -53,7 +52,7 @@ function Mint() {
               </button>
             </div>
 
-            <video className="VideoTag" id="video" autoPlay loop muted>
+            <video className="VideoTag" id="video" autoPlay loop muted={mutedVid}>
               <source
                 src={"./config/images/vid/Web3_cartoon.mp4"}
                 type="video/mp4"
