@@ -18,6 +18,9 @@ body{
 }
 .navCointainer{
     font-family: "Kiddos";
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 h1{
     font-size: medium;

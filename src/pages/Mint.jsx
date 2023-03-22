@@ -6,7 +6,7 @@ function Mint() {
   return (
     <>
       <div className='mainContainer'>
-        <div className='navCointainer'>
+        <div className='navCointainer font-face-main'>
           <h1>Home</h1>
           <h1>Mint</h1>
         </div>
