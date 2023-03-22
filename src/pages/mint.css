@@ -17,8 +17,6 @@
 
 body{
     overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
     justify-items: center;
 }
 .navCointainer{
