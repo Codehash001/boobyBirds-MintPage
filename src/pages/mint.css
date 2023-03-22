@@ -53,10 +53,9 @@ h1{
 }
 
 .test{
-  display: inline;
   width: auto;
   padding: 0px;
   border-radius: 1px;
   background-size: contain;
-  background-color: blue;
+  
 }
