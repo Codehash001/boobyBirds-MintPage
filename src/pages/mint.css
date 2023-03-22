@@ -59,6 +59,7 @@ h1{
   border: 1px;
   border-radius: 1rem;
   background-color: pink;
+  letter-spacing: 0.1em;
   
 }
 
@@ -70,6 +71,7 @@ h1{
   border-radius: 1rem;
   background-color: pink;
   text-align: center;
+  letter-spacing: 0.1em;
 }
 
 .buttonContainer{
