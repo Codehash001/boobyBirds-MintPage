@@ -9,7 +9,7 @@ import { alchemyProvider } from "wagmi/providers/alchemy";
 
 const { chains, provider } = configureChains(
   [mainnet, goerli],
-  [alchemyProvider({ apiKey: "bYwv6lWEDB1KoLyivwgn_7YhZNSOkCRy", priority:0,  })],
+  [alchemyProvider({ apiKey: "bYwv6lWEDB1KoLyivwgn_7YhZNSOkCRy", priority:0, chainId:5 })],
 );
 
 const { connectors } = getDefaultWallets({
@@ -20,7 +20,7 @@ const { connectors } = getDefaultWallets({
 const wagmiClient = createClient({
   autoConnect: false,
   connectors,
-  provider
+  provider : alchemyProvider
 });
 
 function Mint() {
