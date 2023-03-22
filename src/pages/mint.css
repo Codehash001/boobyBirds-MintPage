@@ -41,7 +41,7 @@ h1{
 }
 
 .vid {
-  object-fit: cover;
+  width: auto;
 }
 
 .MintContainer{
