@@ -15,10 +15,12 @@
     font-family: "Besty";
   }
 
-body{
+.mainContainer{
     overflow-x: hidden;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    justify-items: center;
     
 }
 .navCointainer{
