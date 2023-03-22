@@ -1,5 +1,28 @@
 import React from 'react'
 import './mint.css'
+import "@rainbow-me/rainbowkit/styles.css";
+import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
+import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
+import { alchemyProvider } from "wagmi/providers/alchemy";
+import { publicProvider } from "wagmi/providers/public";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
+
+
+const { chains, provider } = configureChains(
+  [chain.mainnet, chain.polygon, chain.optimism, chain.arbitrum, chain.goerli],
+  [alchemyProvider({ alchemyId: process.env.ALCHEMY_ID }), publicProvider()]
+);
+
+const { connectors } = getDefaultWallets({
+  appName: "My RainbowKit App",
+  chains
+});
+
+const wagmiClient = createClient({
+  autoConnect: false,
+  connectors,
+  provider
+});
 
 function Mint() {
   return (
@@ -29,7 +52,7 @@ function Mint() {
           <h2> 10 / 5000 NFTs Minted</h2>
           <h2>Max Mint Amount  : 2</h2>
 
-          <button> Connect Wallet</button>
+          <ConnectButton />
         </div>
         </div>
 
