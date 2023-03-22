@@ -5,6 +5,7 @@
   @font-face {
     font-family: "Kiddos";
     src: local("'Kiddos-Demo'"), url(../styles/Kiddos-Demo.ttf);
+    font-weight: normal;
   }
 
   .font-Kiddos{
@@ -13,7 +14,7 @@
 
   .font-Besty{
     font-family: "Besty";
-    font-weight: 200;
+    
   }
 
 .mainContainer{
