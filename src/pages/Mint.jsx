@@ -2,7 +2,7 @@ import React from 'react'
 import './mint.css'
 import "@rainbow-me/rainbowkit/styles.css";
 import { getDefaultWallets, RainbowKitProvider ,ConnectButton } from "@rainbow-me/rainbowkit";
-import { chain, configureChains, createClient,useClient, WagmiConfig } from "wagmi";
+import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
 
@@ -50,6 +50,12 @@ function Mint() {
           <h2>Connected : 0x2d...c2c</h2>
           <h2> 10 / 5000 NFTs Minted</h2>
           <h2>Max Mint Amount  : 2</h2>
+          
+          <WagmiConfig client={wagmiClient}>
+      		<RainbowKitProvider chains={chains}>
+        		<ConnectButton />
+      		</RainbowKitProvider>
+    	  </WagmiConfig>
 
           
         </div>
