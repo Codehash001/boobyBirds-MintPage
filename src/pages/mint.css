@@ -45,24 +45,16 @@ h1{
   
 }
 
-.mint_soundlink{
-  position: absolute;
-  right: 12%;
-  top: 2%;
-  z-index: 2;
-  width: 50px;
-  height: auto;
-  background-color: rgba(242, 103, 224, 0.8);
-  padding: 2px;
-  border-radius: 50%;
-}
-
-.mint_soundlink button{
+.mint_soundlink {
   background: transparent;
   border: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute ;
+  top: 60px;
+  right: 40px ;
+  z-index: 10px;
 }
 .mint_soundlink button:hover{
   cursor: pointer;
