@@ -19,6 +19,9 @@ body{
     overflow-x: hidden;
     width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
 }
 .navCointainer{
     display: flex;
@@ -42,4 +45,11 @@ h1{
 .vid {
     width: 100vh;
     height: auto;
+}
+
+.mint_date{
+  padding: 10px 15px;
+  background: rgb(218, 22, 169);
+  text-decoration-color: beige;
+  font-size: 20px;
 }
