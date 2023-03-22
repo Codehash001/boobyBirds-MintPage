@@ -54,10 +54,11 @@ h1{
 
 .test{
   display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
   width: auto;
-  background-origin: padding-box;
   padding: 0px;
   border-radius: 1px;
+  background-size: contain;
+  background-color: blue;
 }
