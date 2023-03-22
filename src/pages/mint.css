@@ -63,7 +63,7 @@ h1{
   position: absolute ;
   top: 60px;
   right: 40px ;
-  z-index: 10px;
+  z-index: 2;
   cursor: pointer;
 }
 
