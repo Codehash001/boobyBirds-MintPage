@@ -18,11 +18,16 @@
     
   }
 
+body{
+  background-color: blue;
+}
+
 .mainContainer{
     overflow-x: hidden;
     
 }
 .navCointainer{
+  margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,8 +46,25 @@ h1{
     padding: 10px 80px;
 }
 
-.vid {
-  width: auto;
+@media only screen and (max-width : 600px) 
+  {.vid
+    {
+  width: 500px;
+}
+}
+
+@media only screen and (max-width : 1100px) 
+  {.vid
+    {
+  width: 900px;
+}
+}
+
+@media only screen and (max-width : 1440px) 
+  {.vid
+    {
+  width: 1200px;
+}
 }
 
 .MintContainer{
