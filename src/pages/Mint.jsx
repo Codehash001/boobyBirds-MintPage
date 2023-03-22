@@ -29,6 +29,12 @@ const wagmiClient = createClient({
   provider
 });
 
+const [mutedVid, setMutedVid] = useState(true);
+const handleMutedVid = () => {
+  video.muted = !video.muted;
+  setMutedVid(!mutedVid);
+};
+
 function Mint() {
   return (
     <>
