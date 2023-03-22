@@ -3,24 +3,30 @@ import './mint.css'
 import "@rainbow-me/rainbowkit/styles.css";
 import { getDefaultWallets, RainbowKitProvider ,ConnectButton } from "@rainbow-me/rainbowkit";
 import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
-import { mainnet, goerli } from "wagmi/chains";
-import { alchemyProvider } from "wagmi/providers/alchemy";
+import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
 
 
 const { chains, provider } = configureChains(
-  [mainnet, goerli],
-  [alchemyProvider({ apiKey: "bYwv6lWEDB1KoLyivwgn_7YhZNSOkCRy", priority:0,})],
+  [chain.mainnet, chain.goerli],
+  [
+  jsonRpcProvider ({
+   rpc:(chain) => ({ 
+    http :'https://eth-goerli.g.alchemy.com/v2/bYwv6lWEDB1KoLyivwgn_7YhZNSOkCRy', priority:0,
+  }),
+  }),
+  ],
 );
 
 const { connectors } = getDefaultWallets({
   appName: "My RainbowKit App",
+  jsonRpcUrl: 'https://eth-goerli.g.alchemy.com/v2/bYwv6lWEDB1KoLyivwgn_7YhZNSOkCRy',
   chains
 });
 
 const wagmiClient = createClient({
   autoConnect: false,
   connectors,
-  alchemyProvider
+  provider
 });
 
 function Mint() {
