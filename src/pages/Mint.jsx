@@ -21,7 +21,7 @@ function Mint() {
 
         <div className='MintContainer'></div>
 
-        <h3 className="mint_date font-Kiddos">MINT DATE: March 2023. STAY TUNED!</h3>
+        <h3 className="mint_date font-Besty">MINT DATE: March 2023. STAY TUNED!</h3>
       </div>
     </>
   )
