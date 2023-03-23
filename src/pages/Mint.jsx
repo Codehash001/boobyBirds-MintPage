@@ -17,7 +17,7 @@ import {
   isValidWlAddress,
   getNumberMinted
 } from '../ulits/interact';
-import {config} from '../dapp.config'
+import config from '../dapp.config'
 
 
 const { chains, provider } = configureChains(
