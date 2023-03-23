@@ -85,7 +85,7 @@ useEffect(() => {
 useEffect(() => {
   const init = async () => {
     setIsValidOGUser(await isValidOGAddress())
-    setIsValidWlUser(await isValidWLUser())
+    setIsValidWlUser(await isValidWlAddress())
     setNumberMinted(await getNumberMinted())
     //Add max Mint
   }
@@ -168,7 +168,7 @@ const WlMintHandler = async () => {
                 <h2>Max Mint Amount  : 2</h2>
                 <div className='buttonContainer'>
                   <ConnectButton />
-                  <button onClick={publicMintHandler}>Mint</button>
+                  <button onClick={OGMintHandle}>Mint</button>
                 </div>               
               </div>
             </div>

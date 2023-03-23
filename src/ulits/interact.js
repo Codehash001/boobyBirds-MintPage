@@ -340,7 +340,7 @@ export const PublicMint = async (mintAmount) => {
     gas: String(25000 * mintAmount),
     data: nftContract.methods
       .PublicMint(mintingAmount, proof)
-      .call(),
+      .encodeABI(),
     nonce: nonce.toString(16)
   }
 
