@@ -55,6 +55,6 @@ const config = {
 //     { checkName: 'connect' },
 //     { checkName: 'network' }
 //   ]
-// }
+//}
 
-export config 
+export {config}
