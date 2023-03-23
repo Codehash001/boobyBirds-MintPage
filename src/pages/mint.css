@@ -19,7 +19,7 @@
   }
 
 body{
-  background-color: blue;
+  background-color: rgb(50, 50, 241);
 }
 
 .mainContainer{
@@ -33,8 +33,15 @@ body{
     align-items: center;
 }
 h1{
-    font-size: 30px;
+    font-size: 25px;
     margin: 0px 10px;
+    color: white;
+}
+
+.logo{
+  width: auto;
+  height: 3opx;
+  margin: 0px 20px;
 }
 
 .video_wrapper{
