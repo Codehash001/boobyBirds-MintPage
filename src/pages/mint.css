@@ -27,7 +27,7 @@ body{
     
 }
 .navCointainer{
-  margin-top: 20px;
+  margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +39,7 @@ h1{
 }
 
 .logo{
-  height: 30px;
+  height: 80px;
   width: auto;
   margin: 0px 20px;
 }
