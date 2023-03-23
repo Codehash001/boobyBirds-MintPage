@@ -168,7 +168,7 @@ const WlMintHandler = async () => {
                 <h2>Max Mint Amount  : 2</h2>
                 <div className='buttonContainer'>
                   <ConnectButton />
-                  <button onClick={OGMintHandle}>Mint</button>
+                  <button onClick={OGMintHandler}>Mint</button>
                 </div>               
               </div>
             </div>
