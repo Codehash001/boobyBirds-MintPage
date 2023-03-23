@@ -27,19 +27,18 @@ body{
     
 }
 .navCointainer{
-  margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px 10px;
 }
 h1{
     font-size: 25px;
-    margin: 0px 10px;
     color: white;
 }
 
 .logo{
-  height: 80px;
+  height: 120px;
   width: auto;
   margin: 0px 20px;
 }
