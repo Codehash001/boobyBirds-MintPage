@@ -44,6 +44,7 @@ h1{
 }
 
 .video_wrapper{
+  margin-top: -20px;
   display: flex;
   width: 100%;
   justify-content: center;
@@ -61,7 +62,7 @@ h1{
 
 .mint_soundlink {
   background-color: rgba(242, 103, 224, 0.8);
-  padding: 2px;
+  padding: 2px 2px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -123,7 +124,6 @@ h1{
   border-radius: 0.5rem;
   background-color: pink;
   text-align: center;
-  letter-spacing: 0.1em;
 }
 
 .buttonContainer{
@@ -132,4 +132,25 @@ h1{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+h2{
+  font-weight: 500;
+}
+
+.incButtonContainer{
+  margin-top: 16px;
+  display: inline-block;
+}
+
+.mintAmount{
+  margin: 0px 15px;
+}
+
+.mintButton{
+  margin-top: 16px;
+  padding: 6px 8px;
+  border: 1px;
+  border-radius: 60%;
+  font-size: 18px;
 }
