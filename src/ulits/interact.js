@@ -8,7 +8,7 @@ const OGList = require('../scripts/OGList.js')
 // global BigInt
 
 const web3 = createAlchemyWeb3(process.env.NEXT_PUBLIC_ALCHEMY_RPC_URL)
-const contract = require('../artifacts/contracts/Mytoken.sol/MyToken.json')
+const contract = require('../artifacts/contracts/BoobyBirds.sol/BoobyBirds.json')
 const nftContract = new web3.eth.Contract(contract.abi, config.contractAddress)
 
 
