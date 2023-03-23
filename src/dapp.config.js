@@ -57,4 +57,4 @@ const config = {
 //   ]
 // }
 
-export { config }
+export config 
