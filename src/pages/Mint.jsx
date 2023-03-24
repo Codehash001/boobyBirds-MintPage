@@ -163,6 +163,8 @@ const WlMintHandler = async () => {
 
             <div className='MintContainer'>
               <h2 className='mint_date'>MINT DATE: 29th March 2023. STAY TUNED!</h2>
+              <div className='inn_mint_wrapper'>
+              <img className="gif" src='config/images/BoobyB.gif'/>
               <div className='mintSection'>
                 <h2>Public Sale is Live!</h2>
                 <h3> 10 / 5000 NFTs Minted</h3>
@@ -177,6 +179,8 @@ const WlMintHandler = async () => {
                   <ConnectButton />
                   <button className='mintButton' onClick={OGMintHandler}>Mint</button>
                 </div>               
+              </div>
+              <img className="gif" src='config/images/BoobyB.gif'/>
               </div>
             </div>
             <h3 className="font-Besty"></h3>
