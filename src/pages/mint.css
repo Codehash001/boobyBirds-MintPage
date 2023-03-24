@@ -155,6 +155,11 @@ h2{
   font-weight: 600;
 }
 
+
+h2 span {
+  font-size: 40px;
+}
+
 h3{
   font-size: 25px;
 }
