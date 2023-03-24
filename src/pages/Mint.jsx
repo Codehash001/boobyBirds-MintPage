@@ -84,7 +84,7 @@ const publicMintHandler = async () => {
 
   setStatus({
     success,
-    message: status
+    message:status
   })
   console.log(status)
   setIsMinting(false)
@@ -97,7 +97,7 @@ const OGMintHandler = async () => {
 
   setStatus({
     success,
-    message: status
+    message:status
   })
 
   setIsMinting(false)
@@ -110,7 +110,7 @@ const WlMintHandler = async () => {
 
   setStatus({
     success,
-    message: status
+    message:status
   })
 
   setIsMinting(false)
@@ -183,8 +183,8 @@ const incrementMintAmount = () => {
                     }>{isMinting ? 'Busy...' : 'Mint'}</button> : <></>}
                 </div>
                 {status && status.success ?
-                <h4 className='statusSuc'>{status.message}</h4> :
-                <h4 className='statusFail'>{status.message}</h4> }                              
+                (<h4 className='statusSuc'>{status.message}</h4>) :
+                (<h4 className='statusFail'>{status.message}</h4>) }                              
               </div>
               <img className="gif" src='config/images/BoobyB.gif'/>
               </div>
