@@ -169,10 +169,10 @@ const WlMintHandler = async () => {
                 <h2>Minting is Live!</h2>
                 <h3> 10 / 5000 </h3>
                 {/* + and - buttons */}
-                <div className="incButtonContainer">
-                <svg xmlns="http://www.w3.org/2000/svg" className="SVG" viewBox="0 0 24 24" fill="000"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"></path></svg>
-                <h1 className="mintAmount">1</h1>
+                <div className="incButtonContainer"> 
                 <svg xmlns="http://www.w3.org/2000/svg" className="SVG" viewBox="0 0 24 24" fill="000"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm5 11H7v-2h10v2z"></path></svg>
+                <h1 className="mintAmount">1</h1>
+                <svg xmlns="http://www.w3.org/2000/svg" className="SVG" viewBox="0 0 24 24" fill="000"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"></path></svg>
                 </div>
                 <h4>Max Mint Amount:4</h4>
                 <div className='buttonContainer'>

@@ -105,13 +105,13 @@ export const OGMint = async (mintAmount) => {
   // Verify Merkle Proof
   const isValid = merkleTree.verify(proof, leaf, root)
   console.log('Validity',isValid)
-  if (!isValid) {
+//   if (!isValid) {
 
-   return {
-    success: false,
-    status: 'Invalid MerkleProof'
-  }		
-}
+//    return {
+//     success: false,
+//     status: 'Invalid MerkleProof'
+//   }		
+// }
 
   const mintingAmount = Number(mintAmount)
 
