@@ -182,14 +182,19 @@ h4{
 }
 
 .mintButton{
-  background: purple;
+  background: blue;
   margin-top: 16px;
   padding: 8px 36px;
   border: 1px;
   border-radius: 0.5rem;
   font-size: 18px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
 }
 
 .mintButton:hover{
   background: white;
+  cursor: pointer;
+  color: black;
 }
