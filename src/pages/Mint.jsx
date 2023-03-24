@@ -143,7 +143,8 @@ const WlMintHandler = async () => {
               <div className='inn_mint_wrapper'>
               <img className="gif" src='config/images/BoobyB.gif'/>
               <div className='mintSection'>
-                <h2>Minting is Live!</h2>
+                <h2>Minting is Live!</h2>r
+                <h4>{isOGstate && isValidOGUser && numberMinted < config.MAX_MINT_OG ? 'OG Mint' : isWLState && isValidWLUser && numberMinted < config.MAX_MINT_WHITELIST ? 'WhiteListed Sale' : 'PublicSale'}</h4>
                 <h3> 10 / 5000 </h3>
                 {/* + and - buttons */}
                 <div className="incButtonContainer"> 
