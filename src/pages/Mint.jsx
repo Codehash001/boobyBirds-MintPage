@@ -130,9 +130,9 @@ const incrementMintAmount = () => {
       
           <div className='mainContainer'>
             <div className='navCointainer font-Besty'>
-              <h1>Home</h1>
+              <a href='#'><h1>Home</h1></a>
               <img className="logo" src='config/images/logo.png'/>
-              <h1>Mint</h1>
+              <a href='#'><h1>Mint</h1></a>
             </div>
 
             <div className="video_wrapper">
