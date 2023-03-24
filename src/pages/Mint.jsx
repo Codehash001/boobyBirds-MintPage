@@ -43,8 +43,6 @@ const wagmiClient = createClient({
   provider
 });
 
-const {address , isConnected} = useAccount()
-
 function Mint() {
 
 const [mutedVid, setMutedVid] = useState(true);
@@ -65,6 +63,7 @@ const [totalMinted , setTotalMinted] = useState (0);
 const [status, setStatus] = useState(null)
 const [mintAmount, setMintAmount] = useState(1)
 const [isMinting, setIsMinting] = useState(false)
+const {address , isConnected} = useAccount()
 
 
 useEffect(() => {
