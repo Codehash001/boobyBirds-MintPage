@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import './mint.css'
 import "@rainbow-me/rainbowkit/styles.css";
 import { getDefaultWallets, RainbowKitProvider, ConnectButton } from "@rainbow-me/rainbowkit";
-import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
+import { chain, configureChains, createClient, WagmiConfig, useAccount } from "wagmi";
 import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
 import {
   OGMint,
@@ -46,6 +46,8 @@ const wagmiClient = createClient({
 
 
 function Mint() {
+
+const {address , isConnected} = useAccount()
 
 const [mutedVid, setMutedVid] = useState(true);
 const handleMutedVid = () => {
@@ -177,7 +179,7 @@ const WlMintHandler = async () => {
                 <h4>Max Mint Amount:4</h4>
                 <div className='buttonContainer'>
                   <ConnectButton />
-                  <button className='mintButton' onClick={OGMintHandler}>Mint</button>
+                  { isConnected? <button className='mintButton' onClick={OGMintHandler}>Mint</button> : <></>}
                 </div>               
               </div>
               <img className="gif" src='config/images/BoobyB.gif'/>
