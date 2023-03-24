@@ -181,7 +181,8 @@ const incrementMintAmount = () => {
                   { account.isConnected? <button className='mintButton' disabled={isMinting} onClick={
                     isOGstate && isValidOGUser && numberMinted < config.MAX_MINT_OG ? OGMintHandler : isWLState && isValidWLUser && numberMinted < config.MAX_MINT_WHITELIST ? WlMintHandler : publicMintHandler
                     }>{isMinting ? 'Busy...' : 'Mint'}</button> : <></>}
-                </div>               
+                </div>
+                <h4 className='status'>{statuss}</h4>               
               </div>
               <img className="gif" src='config/images/BoobyB.gif'/>
               </div>
