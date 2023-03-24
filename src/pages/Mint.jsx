@@ -18,6 +18,12 @@ import {
   getNumberMinted
 } from '../ulits/interact';
 import {config} from '../dapp.config'
+import { getAccount } from '@wagmi/core'
+ 
+const account = getAccount(
+  address,
+  isConnected,
+)
 
 
 const { chains, provider } = configureChains(
@@ -56,6 +62,7 @@ const [isWLState, setIsWLState] = useState (false) ;
 const [isPublicState, setIsPublicStat] = useState (false);
 const [isValidOGUser, setIsValidOGUser] = useState(false);
 const [isValidWLUser, setIsValidWlUser] = useState(false);
+const [walletAddress, setWalletAddress] = useState('')
 
 const [numberMinted, setNumberMinted ] = useState (0);
 const [totalMinted , setTotalMinted] = useState (0);
@@ -63,7 +70,6 @@ const [totalMinted , setTotalMinted] = useState (0);
 const [status, setStatus] = useState(null)
 const [mintAmount, setMintAmount] = useState(1)
 const [isMinting, setIsMinting] = useState(false)
-const {address , isConnected} = useAccount()
 
 
 useEffect(() => {
@@ -91,6 +97,16 @@ useEffect(() => {
 
   init()
 }, );
+
+useEffect(() => {
+  const init = async () => {
+    setWalletAddress = await(address())
+    
+    
+  }
+
+  init()
+}, []);
 
 const publicMintHandler = async () => {
   setIsMinting(true)
