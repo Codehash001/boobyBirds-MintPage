@@ -8,7 +8,34 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import { getDefaultWallets, RainbowKitProvider, ConnectButton } from "@rainbow-me/rainbowkit";
+import { chain, configureChains, createClient, WagmiConfig, useAccount } from "wagmi";
+import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
 
+
+
+const { chains, provider } = configureChains(
+  [chain.mainnet, chain.goerli],
+  [
+    jsonRpcProvider({
+      rpc: (chain) => ({
+        http: 'https://eth-goerli.g.alchemy.com/v2/bYwv6lWEDB1KoLyivwgn_7YhZNSOkCRy', priority: 0,
+      }),
+    }),
+  ],
+);
+
+const { connectors } = getDefaultWallets({
+  appName: "My RainbowKit App",
+  jsonRpcUrl: 'https://eth-goerli.g.alchemy.com/v2/bYwv6lWEDB1KoLyivwgn_7YhZNSOkCRy',
+  chains
+});
+
+const wagmiClient = createClient({
+  autoConnect: false,
+  connectors,
+  provider
+});
 
 const router = createBrowserRouter([
   {
@@ -25,7 +52,11 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <WagmiConfig client={wagmiClient}>
+        <RainbowKitProvider chains={chains}>
     <Mint/>
+    </RainbowKitProvider>
+      </WagmiConfig>
   </React.StrictMode>
 );
 
