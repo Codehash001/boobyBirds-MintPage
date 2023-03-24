@@ -43,7 +43,8 @@ const [totalMinted , setTotalMinted] = useState (0);
 const [status, setStatus] = useState(null)
 const [mintAmount, setMintAmount] = useState(1)
 const [isMinting, setIsMinting] = useState(false)
-
+const [maxMintAmount , setMaxMintAmount]= useState(1)
+const [cost , setCost] = useState(0)
 
 useEffect(() => {
   const init = async () => {
@@ -65,7 +66,12 @@ useEffect(() => {
     setIsValidOGUser(await isValidOGAddress())
     setIsValidWlUser(await isValidWlAddress())
     setNumberMinted(await getNumberMinted())
-    //Add max Mint
+    setMaxMintAmount(isOGstate && isValidOGUser && numberMinted < config.MAX_MINT_OG ? config.MAX_MINT_OG :
+      isWLState && isValidWLUser && numberMinted < MAX_MINT_WHITELIST ? config.MAX_MINT_WHITELIST : config.MAX_MINT_PUBLIC)
+    setCost(
+      isOGstate && isValidOGUser && numberMinted < config.MAX_MINT_OG ? 0 :
+      isWLState && isValidWLUser && numberMinted < MAX_MINT_WHITELIST ? config.WhiteListMintCost : config.PublicMintCost
+    )
   }
 
   init()
@@ -110,6 +116,18 @@ const WlMintHandler = async () => {
   setIsMinting(false)
 }
 
+const incrementMintAmount = () => {
+    if (mintAmount < maxMintAmount) {
+      setMintAmount(mintAmount + 1)
+    }
+  }
+
+  const decrementMintAmount = () => {
+    if (mintAmount > 1) {
+      setMintAmount(mintAmount - 1)
+    }
+  }
+
 
   return (
     <>
@@ -148,14 +166,22 @@ const WlMintHandler = async () => {
                 <h3> {totalMinted} / 3100 </h3>
                 {/* + and - buttons */}
                 <div className="incButtonContainer"> 
-                <svg xmlns="http://www.w3.org/2000/svg" className="SVG" viewBox="0 0 24 24" fill="000"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm5 11H7v-2h10v2z"></path></svg>
+                <svg onClick={decrementMintAmount} xmlns="http://www.w3.org/2000/svg" className="SVG" viewBox="0 0 24 24" fill="000"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm5 11H7v-2h10v2z"></path></svg>
                 <h1 className="mintAmount">1</h1>
-                <svg xmlns="http://www.w3.org/2000/svg" className="SVG" viewBox="0 0 24 24" fill="000"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"></path></svg>
+                <svg onClick={incrementMintAmount} xmlns="http://www.w3.org/2000/svg" className="SVG" viewBox="0 0 24 24" fill="000"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"></path></svg>
                 </div>
-                <h4>Max Mint Amount:4</h4>
+                <h4>Max Mint Amount: {maxMintAmount}</h4>
+                <div className="costDiv">
+                  <h4>
+                    <span>COST</span>
+                    <span>{cost * mintAmount} + GAS</span>
+                  </h4>
+                </div>
                 <div className='buttonContainer'>
                   <ConnectButton />
-                  { account.isConnected? <button className='mintButton' onClick={OGMintHandler}>Mint</button> : <></>}
+                  { account.isConnected? <button className='mintButton' onClick={
+                    isOGstate && isValidOGUser && numberMinted < config.MAX_MINT_OG ? OGMintHandler : isWLState && isValidWLUser && numberMinted < config.MAX_MINT_WHITELIST ? WlMintHandler : publicMintHandler
+                    }>Mint</button> : <></>}
                 </div>               
               </div>
               <img className="gif" src='config/images/BoobyB.gif'/>

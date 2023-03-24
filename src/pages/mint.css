@@ -186,6 +186,16 @@ h4{
   font-weight: bolder;
 }
 
+.costDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.costDiv h4 span {
+  margin: 0px 25px;
+}
+
 .mintButton{
   background: blue;
   margin-top: 16px;
