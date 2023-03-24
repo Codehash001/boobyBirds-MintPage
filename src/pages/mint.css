@@ -62,7 +62,6 @@ h1{
 
 .mint_soundlink {
   background-color: rgba(242, 103, 224, 0.8);
-  padding: 1px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -112,7 +111,7 @@ h1{
   padding: 18px;
   border: 1px;
   border-radius: 0.5rem;
-  background-color: pink;
+  background-color: rgb(243, 141, 158);
   font-weight: 600;
   
 }
@@ -132,8 +131,8 @@ h1{
 
 .mintSection{
   margin-top: 20px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
   display: inline-block;
   padding: 20px;
   border: 1px;
@@ -164,6 +163,11 @@ h3{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.SVG{
+  height: 40px;
+  width: 40px;
 }
 
 .mintAmount{
