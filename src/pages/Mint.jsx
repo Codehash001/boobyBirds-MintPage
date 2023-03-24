@@ -67,10 +67,10 @@ useEffect(() => {
     setIsValidWlUser(await isValidWlAddress())
     setNumberMinted(await getNumberMinted())
     setMaxMintAmount(isOGstate && isValidOGUser && numberMinted < config.MAX_MINT_OG ? config.MAX_MINT_OG :
-      isWLState && isValidWLUser && numberMinted < MAX_MINT_WHITELIST ? config.MAX_MINT_WHITELIST : config.MAX_MINT_PUBLIC)
+      isWLState && isValidWLUser && numberMinted < config.MAX_MINT_WHITELIST ? config.MAX_MINT_WHITELIST : config.MAX_MINT_PUBLIC)
     setCost(
       isOGstate && isValidOGUser && numberMinted < config.MAX_MINT_OG ? 0 :
-      isWLState && isValidWLUser && numberMinted < MAX_MINT_WHITELIST ? config.WhiteListMintCost : config.PublicMintCost
+      isWLState && isValidWLUser && numberMinted < config.MAX_MINT_WHITELIST ? config.WhiteListMintCost : config.PublicMintCost
     )
   }
 
