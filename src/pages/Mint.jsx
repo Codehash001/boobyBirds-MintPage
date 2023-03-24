@@ -58,7 +58,6 @@ const [isWLState, setIsWLState] = useState (false) ;
 const [isPublicState, setIsPublicStat] = useState (false);
 const [isValidOGUser, setIsValidOGUser] = useState(false);
 const [isValidWLUser, setIsValidWlUser] = useState(false);
-const [walletAddress, setWalletAddress] = useState('')
 
 const [numberMinted, setNumberMinted ] = useState (0);
 const [totalMinted , setTotalMinted] = useState (0);
@@ -93,16 +92,6 @@ useEffect(() => {
 
   init()
 }, );
-
-useEffect(() => {
-  const init = async () => {
-    setWalletAddress = await(address())
-    
-    
-  }
-
-  init()
-}, []);
 
 const publicMintHandler = async () => {
   setIsMinting(true)
