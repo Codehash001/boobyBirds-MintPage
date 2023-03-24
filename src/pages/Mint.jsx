@@ -174,13 +174,14 @@ const incrementMintAmount = () => {
                 <div className="costDiv">
                   <h4>
                     <span>Cost</span>
-                    <span>{cost * mintAmount} ETH + Gas</span>
+                    <span>=</span>
+                    <span>{(cost).toFixed(4) * mintAmount} ETH + Gas</span>
                   </h4>
                 </div>
                 <div className='buttonContainer'>
                   <ConnectButton />
                   { account.isConnected? <button className='mintButton' disabled={isMinting} onClick={
-                    isOGstate && isValidOGUser && numberMinted < config.MAX_MINT_OG ? OGMintHandler : isWLState && isValidWLUser && numberMinted < config.MAX_MINT_WHITELIST ? WlMintHandler : publicMintHandler
+                    isOGstate && isValidOGUser && numberMinted < config.MAX_MINT_OG ? OGMintHandler : isWLState && isValidWLUser && numberMinted < config.MAX_MINT_WHITELIST ? WlMintHandler : isPublicState ? : publicMintHandler : ''
                     }>{isMinting ? 'Busy...' : 'Mint'}</button> : <></>}
                 </div>               
               </div>

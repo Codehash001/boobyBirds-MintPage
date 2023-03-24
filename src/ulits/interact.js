@@ -301,7 +301,7 @@ export const PublicMint = async (mintAmount) => {
 
   let numberMinted = Number(await nftContract.methods.numberMinted(window.ethereum.selectedAddress).call())
   let MintableAmount = Number(MaxPublic- numberMinted)
-  let proof = null
+  let proof = '0x'
 
   if (isValidOGAddress) {
     MintableAmount = Number(MaxPublic + MaxOG - numberMinted)
