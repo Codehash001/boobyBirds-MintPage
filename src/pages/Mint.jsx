@@ -179,8 +179,8 @@ const incrementMintAmount = () => {
                     }>{isMinting ? 'Busy...' : 'Mint'}</button> : <></>}
                 </div>
                 {success?
-                <h4 className='statusSuc'>{status} </h4> :
-                <h4 className='statusFail'>{status} </h4>}                                             
+                <div className='statusSuc'><h4>{status}</h4> </div> :
+                <div className='statusFail'><h4>{status}</h4> </div>}                                             
               </div>
               <img className="gif" src='config/images/BoobyB.gif'/>
               </div>

@@ -155,7 +155,7 @@ export const OGMint = async (mintAmount) => {
       success: true,
       status: (
         <a href={`https://goerli.etherscan.io/tx/${txHash}`} target="_blank">
-          <p className='underline'>✅ Check out your transaction on Etherscan ✅</p>
+          <p>✅ Check out your transaction on Etherscan ✅</p>
         </a>
       )
     }
@@ -246,7 +246,7 @@ export const WhitelistedMint = async (mintAmount) => {
       success: true,
       status: (
         <a href={`https://goerli.etherscan.io/tx/${txHash}`} target="_blank">
-          <p className='underline'>✅ Check out your transaction on Etherscan ✅</p>
+          <p>✅ Check out your transaction on Etherscan ✅</p>
         </a>
       )
     }
@@ -355,7 +355,7 @@ export const PublicMint = async (mintAmount) => {
       success: true,
       status: (
         <a href={`https://goerli.etherscan.io/tx/${txHash}`} target="_blank">
-          <p className='underline'>✅ Check out your transaction on Etherscan ✅</p>
+          <p>✅ Check out your transaction on Etherscan ✅</p>
         </a>
       )
     }

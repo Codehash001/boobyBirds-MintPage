@@ -233,10 +233,12 @@ h4{
 }
 
 .statusSuc {
-color: green;
+border-radius: 0.5rem;
+border: 1px solid green;
 }
 
 .statusFail{
-color: red;
+border-radius: 0.5rem;
+border: 1px solid red;
 }
 
