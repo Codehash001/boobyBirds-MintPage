@@ -174,7 +174,7 @@ const WlMintHandler = async () => {
                 <h1 className="mintAmount">1</h1>
                 <svg xmlns="http://www.w3.org/2000/svg" className="SVG" viewBox="0 0 24 24" fill="000"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm5 11H7v-2h10v2z"></path></svg>
                 </div>
-                <h3>Max Mint Amount:2</h3>
+                <h4>Max Mint Amount:4</h4>
                 <div className='buttonContainer'>
                   <ConnectButton />
                   <button className='mintButton' onClick={OGMintHandler}>Mint</button>
