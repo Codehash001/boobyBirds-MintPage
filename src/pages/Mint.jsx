@@ -40,7 +40,9 @@ const [isValidWLUser, setIsValidWlUser] = useState(false);
 const [numberMinted, setNumberMinted ] = useState (0);
 const [totalMinted , setTotalMinted] = useState (0);
 
-const [status, setStatus] = useState(null)
+const [status, setStatus] = useState('')
+const [success, setSucess] = useState(false)
+
 const [mintAmount, setMintAmount] = useState(1)
 const [isMinting, setIsMinting] = useState(false)
 const [maxMintAmount , setMaxMintAmount]= useState(1)
@@ -82,11 +84,9 @@ const publicMintHandler = async () => {
 
   const { success, status } = await PublicMint(1)
 
-  setStatus({
-    success,
-    message:status
-  })
-  console.log(status)
+  setStatus(status)
+  setSuccess(success)
+  
   setIsMinting(false)
 }
 
@@ -95,10 +95,8 @@ const OGMintHandler = async () => {
 
   const { success, status } = await OGMint(mintAmount)
 
-  setStatus({
-    success,
-    message:status
-  })
+  setStatus(status)
+  setSuccess(success)
 
   setIsMinting(false)
 }
@@ -108,10 +106,8 @@ const WlMintHandler = async () => {
 
   const { success, status } = await WhitelistedMint(mintAmount)
 
-  setStatus({
-    success,
-    message:status
-  })
+  setStatus(status)
+  setSuccess(success)
 
   setIsMinting(false)
 }
@@ -182,7 +178,7 @@ const incrementMintAmount = () => {
                     isOGstate && isValidOGUser && numberMinted < config.MAX_MINT_OG ? OGMintHandler : isWLState && isValidWLUser && numberMinted < config.MAX_MINT_WHITELIST ? WlMintHandler : publicMintHandler
                     }>{isMinting ? 'Busy...' : 'Mint'}</button> : <></>}
                 </div>
-                <h1>{status.message} </h1>                             
+                <h1>{status} </h1>                             
               </div>
               <img className="gif" src='config/images/BoobyB.gif'/>
               </div>
