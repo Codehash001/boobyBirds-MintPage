@@ -21,8 +21,6 @@ import {config} from '../dapp.config'
 import { getAccount } from '@wagmi/core'
  
 const account = getAccount(
-  address,
-  isConnected,
 )
 
 
