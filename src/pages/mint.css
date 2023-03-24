@@ -233,11 +233,13 @@ h4{
 }
 
 .statusSuc {
+margin-top: 36px;
 border-radius: 0.5rem;
 border: 1px solid green;
 }
 
 .statusFail{
+margin-top: 36px;
 border-radius: 0.5rem;
 border: 1px solid red;
 }
