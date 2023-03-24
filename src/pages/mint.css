@@ -234,12 +234,14 @@ h4{
 
 .statusSuc {
 margin-top: 36px;
+padding: 0px 10px;
 border-radius: 0.5rem;
 border: 1px solid green;
 }
 
 .statusFail{
-margin-top: 36px;
+margin-top: 10px;
+padding: 0px 36px;
 border-radius: 0.5rem;
 border: 1px solid red;
 }
