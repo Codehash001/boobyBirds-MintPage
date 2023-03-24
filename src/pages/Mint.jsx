@@ -18,10 +18,6 @@ import {
   getNumberMinted
 } from '../ulits/interact';
 import {config} from '../dapp.config'
-import { getAccount } from '@wagmi/core'
- 
-const account = getAccount(
-)
 
 
 const { chains, provider } = configureChains(
@@ -48,6 +44,8 @@ const wagmiClient = createClient({
 });
 
 function Mint() {
+
+const account = useAccount()
 
 const [mutedVid, setMutedVid] = useState(true);
 const handleMutedVid = () => {
@@ -190,7 +188,7 @@ const WlMintHandler = async () => {
                 <h4>Max Mint Amount:4</h4>
                 <div className='buttonContainer'>
                   <ConnectButton />
-                  { isConnected? <button className='mintButton' onClick={OGMintHandler}>Mint</button> : <></>}
+                  { account.isConnected? <button className='mintButton' onClick={OGMintHandler}>Mint</button> : <></>}
                 </div>               
               </div>
               <img className="gif" src='config/images/BoobyB.gif'/>
