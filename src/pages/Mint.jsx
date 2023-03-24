@@ -173,9 +173,7 @@ const incrementMintAmount = () => {
                 <h4>Max Mint Amount: {maxMintAmount}</h4>
                 <div className="costDiv">
                   <h4>
-                    <span>Cost</span>
-                    <span>=</span>
-                    <span>{(cost).toFixed(4) * mintAmount} ETH + Gas</span>
+                    <span>Cost = {Number.parseFloat(cost * mintAmount).toFixed(4)} ETH + Gas</span>
                   </h4>
                 </div>
                 <div className='buttonContainer'>
