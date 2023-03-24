@@ -41,7 +41,7 @@ const [numberMinted, setNumberMinted ] = useState (0);
 const [totalMinted , setTotalMinted] = useState (0);
 
 const [status, setStatus] = useState('')
-const [success, setSucess] = useState(false)
+const [success, setSuccess] = useState(false)
 
 const [mintAmount, setMintAmount] = useState(1)
 const [isMinting, setIsMinting] = useState(false)
