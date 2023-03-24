@@ -229,3 +229,11 @@ h4{
   color: black;
 }
 
+.statusSuc {
+color: green;
+}
+
+.statusFail{
+color: red;
+}
+

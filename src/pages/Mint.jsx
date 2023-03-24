@@ -182,7 +182,9 @@ const incrementMintAmount = () => {
                     isOGstate && isValidOGUser && numberMinted < config.MAX_MINT_OG ? OGMintHandler : isWLState && isValidWLUser && numberMinted < config.MAX_MINT_WHITELIST ? WlMintHandler : publicMintHandler
                     }>{isMinting ? 'Busy...' : 'Mint'}</button> : <></>}
                 </div>
-                <h4 className='status'>{status}</h4>               
+                {status && status.success ?
+                <h4 className='statusSuc'>{status.message}</h4> :
+                <h4 className='statusFail'>{status.message}</h4> }                              
               </div>
               <img className="gif" src='config/images/BoobyB.gif'/>
               </div>
