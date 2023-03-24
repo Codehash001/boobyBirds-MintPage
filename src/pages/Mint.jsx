@@ -162,7 +162,7 @@ const incrementMintAmount = () => {
               <img className="gif" src='config/images/BoobyB.gif'/>
               <div className='mintSection'>
                 <h2> <span>Minting is Live!</span></h2>
-                <h2>{isOGstate && isValidOGUser && numberMinted < config.MAX_MINT_OG ? 'OG Mint' : isWLState && isValidWLUser && numberMinted < config.MAX_MINT_WHITELIST ? 'WhiteListed Sale' : isPublicState ?'PublicSale': ''}</h2>
+                <h2 className='mintState'>{isOGstate && isValidOGUser && numberMinted < config.MAX_MINT_OG ? 'OG Mint' : isWLState && isValidWLUser && numberMinted < config.MAX_MINT_WHITELIST ? 'WhiteListed Sale' : isPublicState ?'PublicSale': ''}</h2>
                 <h3> {totalMinted} / 3100 </h3>
                 {/* + and - buttons */}
                 <div className="incButtonContainer"> 
@@ -173,8 +173,8 @@ const incrementMintAmount = () => {
                 <h4>Max Mint Amount: {maxMintAmount}</h4>
                 <div className="costDiv">
                   <h4>
-                    <span>COST</span>
-                    <span>{cost * mintAmount} + GAS</span>
+                    <span>Cost</span>
+                    <span>{cost * mintAmount} ETH + Gas</span>
                   </h4>
                 </div>
                 <div className='buttonContainer'>

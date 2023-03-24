@@ -172,6 +172,10 @@ h4{
 
 }
 
+.mintState {
+ color: purple ;
+}
+
 .incButtonContainer{
   margin-top: 26px;
   display: flex;
@@ -189,21 +193,24 @@ h4{
 .mintAmount{
   margin: 0px 25px;
   font-weight: bolder;
+  color: purple;
 }
 
 .costDiv{
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid black;
 }
 
 .costDiv h4 span {
   margin: 0px 25px;
+  color: purple ;
 }
 
 .mintButton{
   background: blue;
-  margin-top: 16px;
+  margin-top: 36px;
   padding: 8px 36px;
   border: 1px;
   border-radius: 0.5rem;
