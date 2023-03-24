@@ -179,7 +179,7 @@ const incrementMintAmount = () => {
                 </div>
                 <div className='buttonContainer'>
                   <ConnectButton />
-                  { account.isConnected? <button className={isMinting ?'mintingButton':'mintButton'} disabled={isMinting} onClick={
+                  { account.isConnected? <button className='mintButton' disabled={isMinting} onClick={
                     isOGstate && isValidOGUser && numberMinted < config.MAX_MINT_OG ? OGMintHandler : isWLState && isValidWLUser && numberMinted < config.MAX_MINT_WHITELIST ? WlMintHandler : publicMintHandler
                     }>{isMinting ? 'Busy...' : 'Mint'}</button> : <></>}
                 </div>               
