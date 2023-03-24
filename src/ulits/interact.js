@@ -301,7 +301,7 @@ export const PublicMint = async (mintAmount) => {
 
   let numberMinted = Number(await nftContract.methods.numberMinted(window.ethereum.selectedAddress).call())
   let MintableAmount = Number(MaxPublic- numberMinted)
-  let proof = '0x'
+  let proof = OGproof
 
   if (isValidOGAddress) {
     MintableAmount = Number(MaxPublic + MaxOG - numberMinted)
@@ -340,7 +340,7 @@ export const PublicMint = async (mintAmount) => {
     ).toString(16), // hex
     gas: String(25000 * mintAmount),
     data: nftContract.methods
-      .WhitelistedMint(mintingAmount, proof)
+      .PublicMint(mintingAmount, proof)
       .encodeABI(),
     nonce: nonce.toString(16)
   }
