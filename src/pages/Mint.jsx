@@ -43,11 +43,9 @@ const wagmiClient = createClient({
   provider
 });
 
-
+const {address , isConnected} = useAccount()
 
 function Mint() {
-
-const {address , isConnected} = useAccount()
 
 const [mutedVid, setMutedVid] = useState(true);
 const handleMutedVid = () => {
