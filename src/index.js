@@ -11,7 +11,7 @@ import {
 import { getDefaultWallets, RainbowKitProvider, ConnectButton } from "@rainbow-me/rainbowkit";
 import { chain, configureChains, createClient, WagmiConfig, useAccount } from "wagmi";
 import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
-import {config}  from '../dapp.config'
+import {config}  from './dapp.config'
 
 
 
