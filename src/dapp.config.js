@@ -3,7 +3,8 @@ const RPC_URL = process.env.NEXT_PUBLIC_ALCHEMY_RPC_URL
 const config = {
   title: 'Dapp',
   description: 'minting Dapp',
-  contractAddress: '0xc65d111405249b32Ad69c05BA63DAed1f24D99e9',
+  contractAddress: '0x13e7336D67f092e49870e9ed548e0035573e34dF',
+  ALCHEMY_RPC_URL:'https://eth-sepolia.g.alchemy.com/v2/YtSHYS1BcAFu1PPEY25zMv5cj0R39f-X',
 
   maxSupply : 3100,
   MAX_MINT_PUBLIC: 4,

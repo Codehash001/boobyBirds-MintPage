@@ -19,7 +19,7 @@ const { chains, provider } = configureChains(
   [
     jsonRpcProvider({
       rpc: (chain) => ({
-        http: 'https://eth-goerli.g.alchemy.com/v2/bYwv6lWEDB1KoLyivwgn_7YhZNSOkCRy', priority: 0,
+        http: config.ALCHEMY_RPC_URL, priority: 0,
       }),
     }),
   ],
