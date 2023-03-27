@@ -10,13 +10,12 @@ import {
 } from "react-router-dom";
 import { getDefaultWallets, RainbowKitProvider, ConnectButton } from "@rainbow-me/rainbowkit";
 import { chain, configureChains, createClient, WagmiConfig, useAccount } from "wagmi";
-import { mainnet , sepolia } from "@wagmi/chains";
 import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
 
 
 
 const { chains, provider } = configureChains(
-  [mainnet, sepolia],
+  [chain.mainnet, chain.goerli],
   [
     jsonRpcProvider({
       rpc: (chain) => ({

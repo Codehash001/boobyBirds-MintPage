@@ -4,7 +4,7 @@ const config = {
   title: 'Dapp',
   description: 'minting Dapp',
   contractAddress: '0x13e7336D67f092e49870e9ed548e0035573e34dF',
-  ALCHEMY_RPC_URL:'https://eth-sepolia.g.alchemy.com/v2/YtSHYS1BcAFu1PPEY25zMv5cj0R39f-X',
+  ALCHEMY_RPC_URL:'https://eth-goerli.g.alchemy.com/v2/bYwv6lWEDB1KoLyivwgn_7YhZNSOkCRy',
 
   maxSupply : 3100,
   MAX_MINT_PUBLIC: 4,
