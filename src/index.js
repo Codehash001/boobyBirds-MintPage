@@ -11,7 +11,7 @@ import {
 import { getDefaultWallets, RainbowKitProvider, ConnectButton } from "@rainbow-me/rainbowkit";
 import { chain, configureChains, createClient, WagmiConfig, useAccount } from "wagmi";
 import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
-import { mainnet, polygon, optimism, arbitrum, goerli, sepolia } from 'wagmi/chains';
+import { mainnet, polygon, optimism, arbitrum, goerli, sepolia } from '@wagmi/core/chains';
 
 
 
