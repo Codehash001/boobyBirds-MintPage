@@ -16,7 +16,7 @@ import {config}  from './dapp.config'
 
 
 const { chains, provider } = configureChains(
-  [chain.sepolia],
+  [chain.mainnet, chain.sepolia],
   [
     jsonRpcProvider({
       rpc: (chain) => ({
