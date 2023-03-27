@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Mint from './pages/Mint';
-import {config}  from './dapp.config'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -20,7 +19,7 @@ const { chains, provider } = configureChains(
   [
     jsonRpcProvider({
       rpc: (chain) => ({
-        http: config.ALCHEMY_RPC_URL, priority: 0,
+        http: 'https://eth-sepolia.g.alchemy.com/v2/YtSHYS1BcAFu1PPEY25zMv5cj0R39f-X', priority: 0,
       }),
     }),
   ],
@@ -28,7 +27,7 @@ const { chains, provider } = configureChains(
 
 const { connectors } = getDefaultWallets({
   appName: "My RainbowKit App",
-  jsonRpcUrl: config.ALCHEMY_RPC_URL,
+  jsonRpcUrl: 'https://eth-sepolia.g.alchemy.com/v2/YtSHYS1BcAFu1PPEY25zMv5cj0R39f-X',
   chains
 });
 
