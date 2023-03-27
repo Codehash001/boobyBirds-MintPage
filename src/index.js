@@ -15,7 +15,7 @@ import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
 
 
 const { chains, provider } = configureChains(
-  [chain.mainnet, chain.goerli],
+  [chain.mainnet, chain.goerli, chain.sepolia],
   [
     jsonRpcProvider({
       rpc: (chain) => ({
