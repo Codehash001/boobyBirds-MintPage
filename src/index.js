@@ -15,11 +15,11 @@ import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
 
 
 const { chains, provider } = configureChains(
-  [chain.mainnet, chain.goerli],
+  [chain.mainnet, chain.goerli, chain.sepolia],
   [
     jsonRpcProvider({
       rpc: (chain) => ({
-        http: 'https://eth-goerli.g.alchemy.com/v2/bYwv6lWEDB1KoLyivwgn_7YhZNSOkCRy', priority: 0,
+        http: config.ALCHEMY_RPC_URL, priority: 0,
       }),
     }),
   ],
@@ -27,7 +27,7 @@ const { chains, provider } = configureChains(
 
 const { connectors } = getDefaultWallets({
   appName: "My RainbowKit App",
-  jsonRpcUrl: 'https://eth-goerli.g.alchemy.com/v2/bYwv6lWEDB1KoLyivwgn_7YhZNSOkCRy',
+  jsonRpcUrl: config.ALCHEMY_RPC_URL,
   chains
 });
 
