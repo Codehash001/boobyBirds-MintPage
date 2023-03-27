@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Mint from './pages/Mint';
+import {config}  from './dapp.config'
 import {
   createBrowserRouter,
   RouterProvider,
