@@ -11,11 +11,16 @@ import {
 import { getDefaultWallets, RainbowKitProvider, ConnectButton } from "@rainbow-me/rainbowkit";
 import { chain, configureChains, createClient, WagmiConfig, useAccount } from "wagmi";
 import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
+import { mainnet, polygon, optimism, arbitrum, goerli } from 'wagmi/chains';
 
 
 
 const { chains, provider } = configureChains(
-  [chain.mainnet, chain.goerli, chain.sepolia],
+  [mainnet,
+    polygon,
+    optimism,
+    arbitrum
+    ],
   [
     jsonRpcProvider({
       rpc: (chain) => ({
