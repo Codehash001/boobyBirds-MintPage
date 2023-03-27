@@ -82,7 +82,7 @@ useEffect(() => {
 const publicMintHandler = async () => {
   setIsMinting(true)
 
-  const { success, status } = await PublicMint(1)
+  const { success, status } = await PublicMint(mintAmount)
 
   setStatus(status)
   setSuccess(success)
