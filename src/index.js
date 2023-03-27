@@ -19,7 +19,7 @@ const { chains, provider } = configureChains(
   [
     jsonRpcProvider({
       rpc: (chain) => ({
-        http: 'https://eth-sepolia.g.alchemy.com/v2/YtSHYS1BcAFu1PPEY25zMv5cj0R39f-X', priority: 0,
+        http: 'https://eth-goerli.g.alchemy.com/v2/bYwv6lWEDB1KoLyivwgn_7YhZNSOkCRy', priority: 0,
       }),
     }),
   ],
@@ -27,7 +27,7 @@ const { chains, provider } = configureChains(
 
 const { connectors } = getDefaultWallets({
   appName: "My RainbowKit App",
-  jsonRpcUrl: 'https://eth-sepolia.g.alchemy.com/v2/YtSHYS1BcAFu1PPEY25zMv5cj0R39f-X',
+  jsonRpcUrl: 'https://eth-goerli.g.alchemy.com/v2/bYwv6lWEDB1KoLyivwgn_7YhZNSOkCRy',
   chains
 });
 
