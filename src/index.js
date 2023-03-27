@@ -13,10 +13,10 @@ import { chain, configureChains, createClient, WagmiConfig, useAccount } from "w
 import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
 import { Chain, mainnet } from 'wagmi/chains';
 
-const avalancheChain: Chain = {
+const sepolia: Chain = {
   id: 11155111,
   name: 'Sepolia',
-  network: 'sepoia',
+  network: 'sepolia',
   nativeCurrency: {
     decimals: 18,
     name: 'SepoliaETH',
