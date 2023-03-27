@@ -34,7 +34,7 @@ const { provider, chains } = configureChains(
   [sepolia, mainnet],
   [
     jsonRpcProvider({
-      rpc: chain => ({ http: chain.rpcUrls.default.http[0] }),
+      rpc: chain => ({ http: 'https://eth-sepolia.g.alchemy.com/v2/YtSHYS1BcAFu1PPEY25zMv5cj0R39f-X' }),
     }),
   ]
 );
